@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bed_availability">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#03a9af"
+        android:layout_marginBottom="20dp"
+        android:elevation="10dp"
+        app:title="Bed Availability"
+        app:titleTextColor="#ffffff" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+       android:layout_below="@id/toolbar"
+        android:visibility="visible"
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/custom_list_shimmer" />
+
+            <include layout="@layout/custom_list_shimmer" />
+
+            <include layout="@layout/custom_list_shimmer" />
+
+            <include layout="@layout/custom_list_shimmer" />
+
+            <include layout="@layout/custom_list_shimmer" />
+
+            <include layout="@layout/custom_list_shimmer" />
+
+            <include layout="@layout/custom_list_shimmer" />
+
+            <include layout="@layout/custom_list_shimmer" />
+
+            <include layout="@layout/custom_list_shimmer" />
+
+            <include layout="@layout/custom_list_shimmer" />
+
+            <include layout="@layout/custom_list_shimmer" />
+
+            <include layout="@layout/custom_list_shimmer" />
+
+            <include layout="@layout/custom_list_shimmer" />
+
+            <include layout="@layout/custom_list_shimmer" />
+
+            <include layout="@layout/custom_list_shimmer" />
+
+
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/toolbar"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bed_availability_recycler_view"
+        />
+
+</RelativeLayout>
